@@ -52,3 +52,26 @@
 - [ ] 秘密情報、APIキー、個人情報が含まれていないか確認する
 - [ ] PRの内容を確認してからマージする
 - [ ] マージ後は不要な作業ブランチを削除する
+
+## Slack連携セットアップ完了記録
+
+以下のSlack連携のセットアップとテストが完了しました。
+
+### Codex in Slack
+- SlackからCodexを呼び出せる
+- GitHubリポジトリの確認、README.md修正、diff表示、PR作成、マージまで確認済み
+
+### Claude Code in Slack
+- SlackからClaude Codeを呼び出せる
+- happinessisinthemind-hub/llm-daily リポジトリのREADME.md読み取りテスト済み
+- README整理、設計確認、レビュー、改善提案に使う
+
+### Cursor in Slack
+- SlackからCursorを呼び出せる
+- happinessisinthemind-hub/llm-daily リポジトリのREADME.md読み取りテスト済み
+- Cloud Agentとしてコード確認、修正補助、リポジトリ確認に使う
+
+### 共通の運用メモ
+- いずれのAIエージェントも、変更前に対象リポジトリ・目的・触ってよいファイルを明記する
+- 変更後はdiffとPRを確認してからマージする
+- 秘密情報、APIキー、個人情報、医療・介護の機微情報はSlackに書かない
