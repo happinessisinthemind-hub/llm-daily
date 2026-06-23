@@ -8,6 +8,7 @@
 - [Codex運用時の安全ルール](#codex運用時の安全ルール)
 - [Slack運用の役割分担](#slack運用の役割分担)
 - [利用するAIエージェントの使い分け](#利用するaiエージェントの使い分け)
+- [Slack連携セットアップ完了記録](#slack連携セットアップ完了記録)
 
 ## SlackからCodexに依頼するときの基本形
 
@@ -43,6 +44,28 @@
 - Claude Code: README整理、設計確認、レビュー、丁寧な説明や改善提案を行う担当
 - Cursor: Cloud Agentとしてコード確認、修正補助、リポジトリ確認を行う担当
 - 共通ルール: いずれのAIも、変更前に対象リポジトリ・目的・触ってよいファイルを明記し、変更後はdiffとPRを確認してからマージする
+
+## Slack連携セットアップ完了記録
+
+Slack上で以下のAIエージェント連携をセットアップし、動作確認を完了しました。
+
+- Codex in Slack
+  - Slackから <@U0BCRGJP544> を呼び出せることを確認済み
+  - GitHubリポジトリの確認、README.md修正、diff表示、PR作成、マージまで確認済み
+- Claude Code in Slack
+  - Slackから <@U0BAZDBPLGH> を呼び出せることを確認済み
+  - happinessisinthemind-hub/llm-daily リポジトリのREADME.md読み取りテスト済み
+  - README整理、設計確認、レビュー、改善提案に使う
+- Cursor in Slack
+  - Slackから <@U0BC6V61B9D> を呼び出せることを確認済み
+  - happinessisinthemind-hub/llm-daily リポジトリのREADME.md読み取りテスト済み
+  - Cloud Agentとしてコード確認、修正補助、リポジトリ確認に使う
+
+補足ルール:
+
+- いずれのAIエージェントも、変更前に対象リポジトリ・目的・触ってよいファイルを明記する
+- 変更後はdiffとPRを確認してからマージする
+- 秘密情報、APIキー、個人情報、医療・介護の機微情報はSlackに書かない
 
 ## Codex作業後の確認チェックリスト
 
