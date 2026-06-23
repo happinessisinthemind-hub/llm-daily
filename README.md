@@ -7,6 +7,7 @@
 - [SlackからCodexに依頼するときの基本形](#slackからcodexに依頼するときの基本形)
 - [Codex運用時の安全ルール](#codex運用時の安全ルール)
 - [Slack運用の役割分担](#slack運用の役割分担)
+- [Codex作業後の確認チェックリスト](#codex作業後の確認チェックリスト)
 
 ## SlackからCodexに依頼するときの基本形
 
