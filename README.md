@@ -4,6 +4,7 @@
 
 ## 目次
 
+- [Slack連携セットアップ完了記録](#slack連携セットアップ完了記録)
 - [SlackからCodexに依頼するときの基本形](#slackからcodexに依頼するときの基本形)
 - [Codex運用時の安全ルール](#codex運用時の安全ルール)
 - [Slack運用の役割分担](#slack運用の役割分担)
@@ -11,6 +12,29 @@
 - [AI階層運用ルール](#ai階層運用ルール)
 - [Slack連携セットアップ完了記録](#slack連携セットアップ完了記録)
 - [Codex作業後の確認チェックリスト](#codex作業後の確認チェックリスト)
+
+## Slack連携セットアップ完了記録
+
+以下のSlack連携が設定済みでテスト完了しています。
+
+### Codex in Slack
+- Slackから `@Codex` を呼び出せる
+- GitHubリポジトリの確認、README.md修正、diff表示、PR作成、マージまで確認済み
+
+### Claude Code in Slack
+- Slackから `@Claude` を呼び出せる
+- `happinessisinthemind-hub/llm-daily` リポジトリのREADME.md読み取りテスト済み
+- README整理、設計確認、レビュー、改善提案に使う
+
+### Cursor in Slack
+- Slackから `@Cursor` を呼び出せる
+- `happinessisinthemind-hub/llm-daily` リポジトリのREADME.md読み取りテスト済み
+- Cloud Agentとしてコード確認、修正補助、リポジトリ確認に使う
+
+### 注意事項
+- いずれのAIエージェントも、変更前に対象リポジトリ・目的・触ってよいファイルを明記する
+- 変更後はdiffとPRを確認してからマージする
+- 秘密情報、APIキー、個人情報、医療・介護の機微情報はSlackに書かない
 
 ## SlackからCodexに依頼するときの基本形
 
