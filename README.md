@@ -4,6 +4,8 @@
 
 ## 目次
 
+- [リポジトリ構成](#リポジトリ構成)
+- [このリポジトリの使い方](#このリポジトリの使い方)
 - [SlackからCodexに依頼するときの基本形](#slackからcodexに依頼するときの基本形)
 - [Codex運用時の安全ルール](#codex運用時の安全ルール)
 - [Slack運用の役割分担](#slack運用の役割分担)
@@ -11,6 +13,48 @@
 - [AI階層運用ルール](#ai階層運用ルール)
 - [Slack連携セットアップ完了記録](#slack連携セットアップ完了記録)
 - [Codex作業後の確認チェックリスト](#codex作業後の確認チェックリスト)
+
+## リポジトリ構成
+
+```
+llm-daily/
+├── README.md                            # AI運用ルール、使い分けガイドライン
+└── docs/
+    └── slack-ai-relay-dispatcher.md     # Slack AI連携の中継ルール、AI_CALL形式
+```
+
+このリポジトリには実行可能なコードは含まれていません。すべてMarkdownファイルで構成されたドキュメント集です。
+
+## このリポジトリの使い方
+
+### 基本的な閲覧方法
+
+1. **GitHub上で直接閲覧** - ブラウザでこのリポジトリを開き、各Markdownファイルを読む
+2. **ローカルで閲覧** - クローンして任意のMarkdownエディタで開く
+
+```bash
+git clone https://github.com/happinessisinthemind-hub/llm-daily.git
+cd llm-daily
+```
+
+### ドキュメントの更新方法
+
+このリポジトリの更新は、主にSlack経由でAIエージェント（Codex、Claude Code、Cursor）に依頼する運用を想定しています。
+
+**推奨フロー:**
+
+1. Slackで依頼内容を整理（[基本形](#slackからcodexに依頼するときの基本形)を参照）
+2. AIエージェントがファイルを修正し、PRを作成
+3. diffを確認してからマージ
+
+**直接編集する場合:**
+
+```bash
+# 変更を加える
+git add .
+git commit -m "変更内容の簡潔な説明"
+git push origin main
+```
 
 ## SlackからCodexに依頼するときの基本形
 
@@ -99,6 +143,7 @@ Slackでは、OpenClaw、Hermes Agent、Codex、Claude Code、Cursorを単独で
 | Codex | 主力作業係 | GitHub上のREADME修正、Markdown整理、ファイル編集、コミット、PR作成を進める |
 | Claude Code | 精密レビュー係 | 長文レビュー、文章の自然さ、構成整理、論理確認、複雑な意図理解が必要なときに使う |
 | Cursor | 現場修正係 | ローカル編集、画面確認、細かい修正、ファイル単位の調整が必要なときに使う |
+| アンチグラビティ | 批判的検証係 | リスク指摘、反対意見の提示、前提の見直し、盲点の確認、デビルズアドボケート的な視点提供 |
 | 人間 | 最終承認者 | 成果物の採用、マージ、送信、公開、納品を判断する |
 
 ### AIループ運用の基本形
