@@ -6,8 +6,9 @@
 
 ```
 GitHub llm-daily（正本）
-    ├── obsidian/高齢者支援事業/   → iCloud Vault にコピー（個人用・リンク重視）
-    └── notion/高齢者支援事業/     → Notion にインポート（共有・DB化向け）
+    └── export/高齢者支援事業-まとめ一式.md   ← ★ Notion・Obsidian 共通（これ1つでOK）
+    ├── obsidian/高齢者支援事業/   → 個別ノート版（ウィキリンク）
+    └── notion/高齢者支援事業/     → ページ分割インポート用
 ```
 
 | ツール | 向いている用途 |
