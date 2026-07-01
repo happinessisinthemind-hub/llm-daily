@@ -2,7 +2,43 @@
 
 `obsidian/高齢者支援事業/` フォルダに、Obsidian向けに整形したノート一式があります。
 
-## 取り込み手順（おすすめ）
+## iCloud にある Vault へ入れる（Mac・いちばん簡単）
+
+このクラウド環境から iCloud 上の Vault には直接書き込めないため、Mac 側で次の操作をしてください。
+
+### 手順
+
+1. **GitHub から取得**
+   - PR [#19](https://github.com/happinessisinthemind-hub/llm-daily/pull/19) をマージ後、ローカルで `git pull`
+   - または GitHub の `obsidian/高齢者支援事業/` を ZIP でダウンロード
+
+2. **iCloud 上の Vault を Finder で開く**
+   - 一般的なパス:
+     ```
+     ~/Library/Mobile Documents/iCloud~md~obsidian/Documents/<Vault名>/
+     ```
+   - Finder で `移動` → `フォルダへ移動…`（⌘⇧G）に上記を貼り付けて Enter
+   - または Obsidian の `Vault をFinderで開く` を使う
+
+3. **フォルダをコピー**
+   - `llm-daily/obsidian/高齢者支援事業/` を、Vault 内の好きな場所へドラッグ＆ドロップ
+   - 例: `<Vault名>/仕事/高齢者支援事業/`
+
+4. **Obsidian で確認**
+   - iCloud 同期後、Obsidian で `00-索引（MOC）` を開く
+   - リンクがつながっていれば OK
+
+### ターミナルでコピーする場合（Vault名を置き換え）
+
+```bash
+VAULT_NAME="あなたのVault名"
+cp -R ~/path/to/llm-daily/obsidian/高齢者支援事業 \
+  "$HOME/Library/Mobile Documents/iCloud~md~obsidian/Documents/$VAULT_NAME/"
+```
+
+---
+
+## その他の取り込み手順
 
 ### 方法A: フォルダをVaultにコピー
 
