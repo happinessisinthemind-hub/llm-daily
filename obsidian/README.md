@@ -80,4 +80,10 @@ obsidian/高齢者支援事業/
 
 ## 元データ
 
-`docs/elderly-support-service/` にも同内容の素のMarkdownがあります。Obsidian 以外で使う場合はそちらを参照してください。
+`docs/elderly-support-service/` にも同内容の素のMarkdownがあります。
+
+## Notion 連携
+
+- Notion用エクスポート: `notion/高齢者支援事業/`（Markdownインポート向け）
+- 統合ガイド: `docs/integration/obsidian-notion-sync.md`
+- Obsidian内メモ: [[Notion連携]]
