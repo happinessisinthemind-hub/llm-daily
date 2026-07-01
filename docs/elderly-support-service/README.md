@@ -12,6 +12,7 @@
 
 | ファイル | 用途 |
 |----------|------|
+| [business-design.md](./business-design.md) | **事業設計整理書**（市場調査まとめ・15項目） |
 | [interview-cheat-sheet.md](./interview-cheat-sheet.md) | 面談当日の30分用チートシート |
 | [month1/01-field-issues-map.md](./month1/01-field-issues-map.md) | 現場課題マップ（たたき台） |
 | [month1/02-facility-hearing-sheet.md](./month1/02-facility-hearing-sheet.md) | 施設ヒアリングシート |
